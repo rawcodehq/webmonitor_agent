@@ -31,6 +31,7 @@ defmodule WebmonitorAgent.Mixfile do
     [
       {:maru, "~> 0.10"},
       {:httpoison, "~> 0.8"},
+      {:exrm, "~> 1.0"},
     ]
   end
 end
