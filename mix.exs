@@ -14,7 +14,7 @@ defmodule WebmonitorAgent.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger],
+    [applications: [:logger, :maru, :httpoison],
      mod: {WebmonitorAgent, []}]
   end
 
@@ -28,6 +28,9 @@ defmodule WebmonitorAgent.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:maru, "~> 0.10"},
+      {:httpoison, "~> 0.8"},
+    ]
   end
 end
